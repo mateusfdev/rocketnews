@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&family=Merriweather+Sans:wght@400;500;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Rocket News</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li name="Link invisivel para deficientes visuais verem o conteudo mais rapido">
+                        <a id="Deficiente-visual"
+                            href="@first-selection"
+                            tabindex="-1"
+                            >Ir para conteudo do Site</a>
+                    </li>
+                    <li name="RocketNews-Logo">
+                        <a href="sub_letter_news.html"
+                            titte="RocketNews - Um site de noticias">
+                        <figure>
+                            <img id="logo"
+                                src="./assets/logo.svg"
+                                alt="RocketNews um site de noticias"/>
+                        </figure>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section
+            id="First-selection"
+            name="Motivos para se inscrever">
+            <div class="container">
+                <article>
+                    <h1 class="title-h2"
+                    >atualize ideias e informações em 5min.</h1>
+                    <h2 class="title-h3"
+                    >todo  o que você precisa saber para começar o seu dia bem informado</h2>
+                    <p class="paragraph-text"
+                    >Noticias sobre o universo Rocketseat, e tudo o que você precisa saber para começar o seu dia melhor</p>
+                    <p class="paragraph-text"
+                    >perfeito para se preparar para codar (cafe emogi)</p>
+                </article>
+            </div>
+        </section>
+        <section name="Envio do email de usuario para inscrição na RocketNews ou redirecionamento para XXX.html">
+            <div class="container">
+                <form method="GET"
+                    action="sub_letter_news.html"
+                    id="send-email-form">
+                    <fieldset name="Container-form">
+                        <div>
+                            <label class=label-form
+                            for="email"
+                            tittle="Insira seu e-mail aqui"
+                            >Insira seu E-mail aqui:
+                            </label>
+                            <div class="form-flexbox">
+                                <input required
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="olámundo@Rocketseat.com"
+                                    tittle="Insira seu E-mail"
+                                    autocomplete="email"
+                                    tabindex="1"/>
+<!--Enviar formulario-->
+                                <button type="submit"
+                                    tittle="envie seu e-mail aqui"
+                                    id="send-email"
+                                    tabindex="2"
+                                    form="send-email-form">
+                                    <figure>
+                                        <img src="./assets/send.svg"
+                                        alt="Enviar email">
+                                    </figure>
+                                </button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <a href="#"
+                    class="icon-link"
+                    tabindex="3"
+                    >deixe-me ler primeiro
+                </a>
+            </div>
+        </section>
+    </main>
+<!--script de animaçao de alerta para agradecer a quem se inscreveu
+(document.querySelector("#email").value !--"")
+        <script>
+        if (document.querySelector("#email").value !--"")
+        document.querySelector("#send-email")
+        .addEventListener("submit", alert("Obrigado por se inscrever na RocketNews")
+        );
+    </script>
+-->
+</body>
+</html>
